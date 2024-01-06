@@ -1,0 +1,27 @@
+﻿Two Sum
+
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        jmap = {}
+        n = len(nums)
+
+
+        for i in range(n):
+            jmap[nums[i]] = i
+
+
+        for i in range(n):
+            complement = target - nums[i]
+
+
+            if complement in jmap and jmap[complement]!= i:
+                return [i, jmap[complement]]
+
+
+        return []
