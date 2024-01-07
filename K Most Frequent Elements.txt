@@ -1,0 +1,24 @@
+﻿K Most Frequent Elements
+
+
+from collections import Counter
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        sorted_num = sorted(nums)
+
+
+        res = Counter(sorted_num)
+        result = []
+        for i in range(k):
+            max_value = max(list(res.values()))
+            key = list(res.keys())[list(res.values()).index(max_value)]
+            result.append(key)
+            res.pop(key)
+
+
+        return result
