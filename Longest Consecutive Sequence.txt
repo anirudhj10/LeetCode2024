@@ -1,0 +1,36 @@
+﻿Longest Consecutive Sequence 
+
+Create a set of the list to reduce the number of comparisons
+
+
+Initialize longest = 0 -> check for starting of the sequence by checking if num -1 exists in the set -> if it does exits, it indicates the start of the sequence -> so initliaze length to 0 and check if it successor exists in the set, if it does increment the length by 1. Execution should execute the loop once no more successors are found. Then assign longest to the max value between the length and the initial longest value.
+
+Return longest
+
+
+
+class Solution(object):
+    def longestConsecutive(self, nums):
+
+
+        numset = set(nums)
+        longest = 0
+
+
+        for num in numset:
+
+
+            if(num-1) not in numset:
+                length = 0
+
+
+                while(num + length) in numset:
+                    length += 1
+
+
+            
+                longest = max(longest, length)
+
+
+        
+        return longest
