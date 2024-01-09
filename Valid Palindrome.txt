@@ -1,0 +1,15 @@
+﻿Valid Palindrome
+
+Remove all the unwanted characters and spaces.
+Reverse and compare with original string
+
+
+
+
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        # s = s.replace(" ","")
+        s = ''.join(letter for letter in s if letter.isalnum()).lower()
+        a = s[::-1]
+        return s == a
