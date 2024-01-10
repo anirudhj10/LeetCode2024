@@ -1,7 +1,7 @@
-﻿Valid Palindrome
+Valid Palindrome
 
 Remove all the unwanted characters and spaces.
-Reverse and compare with original string
+Reverse and compare with original string.
 
 
 
