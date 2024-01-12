@@ -1,7 +1,7 @@
-﻿Contains maximum water
+Contains maximum water
 
 
-Using 2 pointer l,r find the area occupied and add it to res[], next iteration reduce/ increase the value of respective pointer depending on max(h[l], h[r]). Find area and compare it with res[].
+Using 2 pointer l,r find the area occupied and add it to res[], next iteration reduce/ increase the value of respective pointer depending on max(h[l], h[r]). Find area and compare it with res[]. END
 
 
 class Solution:
