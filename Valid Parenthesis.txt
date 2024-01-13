@@ -1,0 +1,23 @@
+﻿Valid Parenthesis
+
+
+Maintain a dictionary of the opening and closing parenthesis
+Upon encountering opening parenthesis push it to the top of the stack. 
+Upon encountering a closing parenthesis pop the last element and check if it matches the closing parenthesis. If it doesnt then return False
+
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        bracket_mapping = {')': '(', '}': '{', ']': '['}
+
+
+        for ch in s:
+            if ch in '({[':
+                stack.append(ch)
+            elif ch in ')}]':
+                if not stack or bracket_mapping[ch] != stack.pop():
+                    return False
+
+
+        return not stack
