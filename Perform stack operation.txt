@@ -1,0 +1,37 @@
+﻿Perform stack operation
+
+
+Push -> append val to a list and arrange it according to descending order
+Pop -> pop the last element in the stack
+Top -> return the top element in the stack
+getMin -> return the last element of sorted list
+
+class MinStack:
+
+
+    def __init__(self):
+        self.stack = []
+        self.stack_desc = []
+        
+    def push(self, val: int) -> None:
+        self.stack.append(val)
+        if not self.stack_desc or val <= self.stack_desc[-1]:
+            self.stack_desc.append(val)
+        
+    def pop(self) -> None:
+        if self.stack.pop() == self.stack_desc[-1]:
+            self.stack_desc.pop()
+        
+    def top(self) -> int:
+        return self.stack[-1]
+        a
+    def getMin(self) -> int:
+        return self.stack_desc[-1]
+
+
+# Your MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(val)
+# obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.getMin()
