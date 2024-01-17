@@ -1,0 +1,16 @@
+﻿Daily Temperatures
+
+
+class Solution(object):
+    def dailyTemperatures(self, temperatures):
+        """
+        :type temperatures: List[int]
+        :rtype: List[int]
+        """
+        final_answer = []
+        highest = 29
+        for i in range(len(temperatures)):
+            answer = []
+            temp = temperatures[i]
+            if temp < highest:
+                answer.append(temp)
