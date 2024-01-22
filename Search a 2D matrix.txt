@@ -1,0 +1,27 @@
+﻿Search a 2D matrix
+
+
+Find the right row to search based on the range in which the target lies
+
+Then perform binary search in the target row. If found return true, else false
+
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        for row in matrix:
+            print(row[0])
+            if(target >= row[0] and target <= row[len(row)-1]):
+                if(target == row[0] or target == row[len(row)-1]):
+                    return True
+                else:
+                    low = 0
+                    high = len(row)-1
+                    while(low <= high):
+                        mid = (low + high)//2
+                        if(row[mid] == target):
+                            return True
+                        elif(row[mid] < target):
+                            low = mid + 1
+                        else:
+                            high = mid - 1
+        
+        return False
