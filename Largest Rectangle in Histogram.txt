@@ -1,6 +1,6 @@
-﻿Largest Rectangle in Histogram
+Largest Rectangle in Histogram
 
-No idea how to solve, just ignore because its hard
+No idea how to solve, just ignore because its hard. Still no idea
 
 
 
