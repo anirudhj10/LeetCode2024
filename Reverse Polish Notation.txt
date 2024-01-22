@@ -1,7 +1,7 @@
-﻿Reverse Polish Notation
+Reverse Polish Notation
 
 
-Keep pushing int(operators) to stack until you encounter an operand, when you do pop the last 2 operands and perform the operation and push the result to stack. (remeber to use  int(for division)
+Keep pushing int(operators) to stack until you encounter an operand, when you do pop the last 2 operands and perform the operation and push the result to stack. (remember to use  int(for division)
 
 
 
