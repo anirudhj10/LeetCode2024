@@ -3,7 +3,7 @@ Largest Rectangle in Histogram
 No idea how to solve, just ignore because its hard. Still no idea
 
 
-
+#Stack
 
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
