@@ -1,5 +1,6 @@
-﻿Koko eating banana
+Koko eating banana
 
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
+	list1 = []
