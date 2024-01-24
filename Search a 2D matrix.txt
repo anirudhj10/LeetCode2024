@@ -1,4 +1,6 @@
-﻿Search a 2D matrix
+Search a 2D matrix
+
+# EZ Solution
 
 
 Find the right row to search based on the range in which the target lies
