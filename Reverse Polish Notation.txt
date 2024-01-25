@@ -27,6 +27,6 @@ class Solution:
                 elif token == '/':
                     stack.append(int(operand1 / operand2))
 
-
+.
         
         return(stack.pop())
