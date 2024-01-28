@@ -2,7 +2,7 @@ Car Fleet
 
 Make pair of pos,speed -> sort it in descending order -> append time for every pair to stack. -> check if len(stack) > 2 and stack[-1] <= stack[-2] - if True pop(). Return Length in the end. The END
 
-#Easy Solution
+#Easy Solution ,
 
 
 class Solution:
