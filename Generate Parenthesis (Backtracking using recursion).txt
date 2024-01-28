@@ -8,7 +8,7 @@ Only add closing parenthesis if closeN < openN
 Do recursion until openN == closeN == n
 
 
-
+#generateparenthesis
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
