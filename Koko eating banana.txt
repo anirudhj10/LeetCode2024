@@ -1,10 +1,10 @@
-﻿Koko eating banana
+Koko eating banana
 
 
 First find the max of the p, then perform binary search from min of p to max of p. Every time the middle element should be used to check how much time it take to eat all the bananas. If it takes less than the expected time, then move high to mid -1 else move low to mid + 1. Return left element
 
 
-
+#finally done
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
