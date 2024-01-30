@@ -1,8 +1,10 @@
-﻿Find minimum in rotated sorted array
+Find minimum in rotated sorted array
 
 
 Find point of rotation by comparing adjacent elements -> then using list slicing, 
 Return the first element of the second sorted half of the array
+
+#Binary
 
 
 
