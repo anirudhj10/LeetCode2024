@@ -1,4 +1,4 @@
-﻿3 Sum
+3 Sum
 
 
 Separate all positive, negative and 0’s into separate lists
@@ -12,6 +12,8 @@ Now for every p[i] and p[i+1] check if complement of their sum exists in the -ve
 
 
 Now for every n[i] and n[i+1] check if complement of their sum exists in the +ve[], if it exists append [n[i],n[i+1],target] to res[]
+
+#using 2 pointers
 
 
 class Solution:

@@ -5,6 +5,7 @@ Keep pushing int(operators) to stack until you encounter an operand, when you do
 
 
 #reversepolish notation
+#basic stack
 
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
