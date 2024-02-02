@@ -6,6 +6,8 @@ Pop -> pop the last element in the stack
 Top -> return the top element in the stack
 getMin -> return the last element of sorted list.
 
+Basic
+
 class MinStack:
 
 
