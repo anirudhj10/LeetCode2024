@@ -1,6 +1,6 @@
 Generate Parenthesis (Backtracking using recursion)
 
-Using stacks
+Using stacks.
 
 
 Only add open parenthesis if openN < n
